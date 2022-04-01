@@ -30,6 +30,9 @@ We need data visualization providers for the data analysis results and the proje
 ### ☁ Cloud Provider: Where our project will live. <a name="cloud"></a>
 In order to have online our project with all it's features we will use the free tier of AWS services for the database hosting, its connection for the data analysis queries and dashboard visualizations.
 
+## ETL Pipeline
+
+![](https://drive.google.com/uc?id=1kcFl_Qz_K1WvuMY0wPUoA51tfOWEIv58)
 
 
 
