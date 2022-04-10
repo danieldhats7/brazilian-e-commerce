@@ -4,6 +4,7 @@ from extract import Extract_csv
 
 extract_dict = {
     'customers': Extract_csv('customers', RAW_DATA_URL_DICT['customers']),
+    'geolocation': Extract_csv('geolocation', RAW_DATA_URL_DICT['geolocation']),
     'order_items': Extract_csv('order_items', RAW_DATA_URL_DICT['order_items']),
     'order_reviews': Extract_csv('order_reviews', RAW_DATA_URL_DICT['order_reviews']),
     'orders': Extract_csv('orders', RAW_DATA_URL_DICT['orders']),
