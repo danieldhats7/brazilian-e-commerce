@@ -19,3 +19,7 @@ class Extract_csv:
         gdown.download(self.url, self.path.as_posix(), quiet=False)
         print(f'Downloaded {self.name} to {self.path}')
         return self.path
+
+    def tranform():
+        
+        pass
