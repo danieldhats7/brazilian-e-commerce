@@ -15,6 +15,7 @@ class Extract_csv:
         Returns:
             str: csv path location
         """
+        
         self.path.parent.mkdir(parents=True, exist_ok=True)
         gdown.download(self.url, self.path.as_posix(), quiet=False)
         print(f'Downloaded {self.name} to {self.path}')
