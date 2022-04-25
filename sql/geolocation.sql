@@ -1,8 +1,8 @@
 DROP TABLE IF EXISTS geolocation;
 
 CREATE TABLE geolocation (
-zip_code_prefix SMALLINT PRIMARY KEY  NOT NULL,
-latitude DECIMAL(9,6) NOT NULL,
-longitude DECIMAL(9,6) NOT NULL,
-city VARCHAR(32) NOT NULL,
-state VARCHAR(2) NOT NULL);
+geolocation_zip_code_prefix INT NOT NULL,
+geolocation_lat DECIMAL(9,6) NOT NULL,
+geolocation_lng DECIMAL(9,6) NOT NULL,
+geolocation_city VARCHAR(40) NOT NULL,
+geolocation_state VARCHAR(2) NOT NULL);

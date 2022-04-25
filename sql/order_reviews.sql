@@ -1,12 +1,10 @@
 DROP TABLE IF EXISTS order_reviews;
 
 CREATE TABLE order_reviews (
-id INT PRIMARY KEY  NOT NULL,
-order_id INT NOT NULL,
-score SMALLINT NOT NULL,
-coment_title VARCHAR(100),
-comment_text TEXT,
-creation_date TIMESTAMP NOT NULL,
-answer_date TIMESTAMP NOT NULL);
-
-ALTER TABLE order_reviews ADD CONSTRAINT order_reviews_order_id_orders_id FOREIGN KEY (order_id) REFERENCES orders(id);
+review_id VARCHAR(32) NOT NULL,
+order_id VARCHAR(32) NOT NULL,
+review_score SMALLINT NOT NULL,
+review_comment_title VARCHAR(100),
+review_comment_message TEXT,
+review_creation_date TIMESTAMP NOT NULL,
+review_answer_timestamp TIMESTAMP NOT NULL);

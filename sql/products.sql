@@ -1,12 +1,12 @@
 DROP TABLE IF EXISTS products;
 
 CREATE TABLE products (
-id INT PRIMARY KEY  NOT NULL,
-category_name VARCHAR(50),
-name_lenght REAL,
-description_lenght REAL,
-photos_qty SMALLINT,
-weight_g REAL,
-lenght_cm REAL,
-height_cm REAL,
-width_cm REAL);
+product_id VARCHAR(32) PRIMARY KEY  NOT NULL,
+product_category_name VARCHAR(50),
+product_name_lenght REAL,
+product_description_lenght REAL,
+product_photos_qty SMALLINT,
+product_weight_g REAL,
+product_length_cm REAL,
+product_height_cm REAL,
+product_width_cm REAL);
