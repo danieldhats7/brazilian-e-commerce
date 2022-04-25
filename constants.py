@@ -2,18 +2,18 @@ from pathlib import Path
 
 ROOT_DIR = Path()
 DATA_DIR = ROOT_DIR / 'data'
-DATA_SQL = ROOT_DIR / 'sql'
+SQL_DIR = ROOT_DIR / 'sql'
 
 CUSTOMERS_TABLE_NAME = 'customers'
 GEOLOCATION_TABLE_NAME = 'geolocation'
 ORDER_ITEMS_TABLE_NAME = 'order_items'
 ORDER_REVIEWS_TABLE_NAME = 'order_reviews'
-ORDERS_TABLE_NAME = 'orders'
+ORDERS_TABLE_NAME = 'orders_t'
 PAYMENTS_TABLE_NAME = 'payments'
 PRODUCTS_TABLE_NAME = 'products'
 SELLERS_TABLE_NAME = 'sellers'
 
-TABLES_NAMES = [
+TABLE_NAMES = [
     CUSTOMERS_TABLE_NAME,
     GEOLOCATION_TABLE_NAME,
     ORDER_ITEMS_TABLE_NAME,

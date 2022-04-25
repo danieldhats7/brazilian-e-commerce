@@ -15,6 +15,7 @@ class Extract_csv:
         Returns:
             str: csv path location
         """
+        
         self.path.parent.mkdir(parents=True, exist_ok=True)
         gdown.download(self.url, self.path.as_posix(), quiet=False)
         print(f'Downloaded {self.name} to {self.path}')
@@ -54,7 +55,7 @@ class Extract_enrich_order(Extract_csv):
             purchase_date = pd.to_datetime(orders_df['order_purchase_timestamp']).dt.date,
             purchase_year = pd.to_datetime(orders_df['order_purchase_timestamp']).dt.year,
             purchase_month = pd.to_datetime(orders_df['order_purchase_timestamp']).dt.month,
-            purchase_MMYYYY= pd.to_datetime(orders_df['order_purchase_timestamp']).dt.strftime('%b-%y'),
+            purchase_mmyyyy= pd.to_datetime(orders_df['order_purchase_timestamp']).dt.strftime('%b-%y'),
             purchase_day = pd.to_datetime(orders_df['order_purchase_timestamp']).dt.day_name(),
             purchase_hour = pd.to_datetime(orders_df['order_purchase_timestamp']).dt.hour)
 
