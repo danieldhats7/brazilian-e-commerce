@@ -58,6 +58,5 @@ In order to have online our project with all it's features we will use the free 
 
 ![](https://drive.google.com/uc?id=1kcFl_Qz_K1WvuMY0wPUoA51tfOWEIv58)
 
-[Watch our interactive Data Model and Data Pipeline](https://miro.com/app/board/uXjVO-rg3Ls=/)
 
 
