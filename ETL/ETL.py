@@ -37,8 +37,7 @@ def transform():
 def load():
     pass
 
-if __name__ == "__main__":
-
+def run_pipeline():
     # Extract raw data and store path in file_paths dict
     file_paths = extract_raws()
     print('Extract done!')
@@ -50,4 +49,8 @@ if __name__ == "__main__":
         df = pd.read_csv(path)
         load_.load_table(name, df)
     print('Load Done!')
+
+if __name__ == "__main__":
+
+    run_pipeline()
 
