@@ -16,7 +16,7 @@ To create tables on database run:
 
 `$python setup_db.py`
 
-## Extract raw data
+## ETL
 To extract raw data from resource, transform it and load into database run:
 
 `$python ETL.py`
